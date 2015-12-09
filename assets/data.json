@@ -1,0 +1,52 @@
+{
+  "name": "flare",
+  "children": [
+    {
+      "name": "animate",
+      "children": [
+        {
+          "name": "Easing",
+          "size": 17010
+        },
+        {
+          "name": "FunctionSequence",
+          "size": 5842
+        }
+      ]
+    },
+    {
+      "name": "flex",
+      "children": [
+        {
+          "name": "FlareVis",
+          "size": 10
+        },
+        {
+          "name": "FlareVis",
+          "size": 20
+        },
+        {
+          "name": "FlareVis",
+          "size": 30
+        },
+        {
+          "name": "FlareVis",
+          "size": 40
+        }
+      ]
+    },
+    {
+      "name": "physics",
+      "children": [
+        {
+          "name": "DragForce",
+          "size": 1082
+        },
+        {
+          "name": "GravityForce",
+          "size": 1336
+        }
+      ]
+    }
+  ]
+}

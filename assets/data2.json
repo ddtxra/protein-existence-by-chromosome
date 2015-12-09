@@ -1,0 +1,608 @@
+{
+  "name": "protein existence by chromosome",
+  "children": [
+    {
+      "name": "chromsome1",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 1746
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 208
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 89
+        },
+        {
+          "name": "Uncertain",
+          "size": 49
+        },
+        {
+          "name": "Predicted",
+          "size": 6
+        }
+      ]
+    },
+    {
+      "name": "chromsome2",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 1104
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 100
+        },
+        {
+          "name": "Uncertain",
+          "size": 18
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 13
+        },
+        {
+          "name": "Predicted",
+          "size": 3
+        }
+      ]
+    },
+    {
+      "name": "chromsome3",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 934
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 106
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 20
+        },
+        {
+          "name": "Uncertain",
+          "size": 14
+        },
+        {
+          "name": "Predicted",
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "chromsome4",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 665
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 63
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 24
+        },
+        {
+          "name": "Uncertain",
+          "size": 21
+        },
+        {
+          "name": "Predicted",
+          "size": 2
+        }
+      ]
+    },
+    {
+      "name": "chromsome5",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 776
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 84
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 18
+        },
+        {
+          "name": "Uncertain",
+          "size": 10
+        },
+        {
+          "name": "Predicted",
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "chromsome6",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 1698
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 191
+        },
+        {
+          "name": "Uncertain",
+          "size": 33
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 27
+        },
+        {
+          "name": "Predicted",
+          "size": 16
+        }
+      ]
+    },
+    {
+      "name": "chromsome7",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 769
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 111
+        },
+        {
+          "name": "Uncertain",
+          "size": 44
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 17
+        },
+        {
+          "name": "Predicted",
+          "size": 6
+        }
+      ]
+    },
+    {
+      "name": "chromsome8",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 604
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 68
+        },
+        {
+          "name": "Uncertain",
+          "size": 43
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 21
+        },
+        {
+          "name": "Predicted",
+          "size": 5
+        }
+      ]
+    },
+    {
+      "name": "chromsome9",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 649
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 87
+        },
+        {
+          "name": "Uncertain",
+          "size": 36
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 33
+        },
+        {
+          "name": "Predicted",
+          "size": 10
+        }
+      ]
+    },
+    {
+      "name": "chromsome10",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 638
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 83
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 20
+        },
+        {
+          "name": "Uncertain",
+          "size": 18
+        },
+        {
+          "name": "Predicted",
+          "size": 4
+        }
+      ]
+    },
+    {
+      "name": "chromsome11",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 989
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 226
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 109
+        },
+        {
+          "name": "Uncertain",
+          "size": 39
+        },
+        {
+          "name": "Predicted",
+          "size": 6
+        }
+      ]
+    },
+    {
+      "name": "chromsome12",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 917
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 96
+        },
+        {
+          "name": "Uncertain",
+          "size": 21
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 18
+        },
+        {
+          "name": "Predicted",
+          "size": 3
+        }
+      ]
+    },
+    {
+      "name": "chromsome13",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 280
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 32
+        },
+        {
+          "name": "Uncertain",
+          "size": 10
+        },
+        {
+          "name": "Predicted",
+          "size": 5
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 2
+        }
+      ]
+    },
+    {
+      "name": "chromsome14",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 536
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 67
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 23
+        },
+        {
+          "name": "Uncertain",
+          "size": 17
+        },
+        {
+          "name": "Predicted",
+          "size": 5
+        }
+      ]
+    },
+    {
+      "name": "chromsome15",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 507
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 56
+        },
+        {
+          "name": "Uncertain",
+          "size": 41
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 13
+        },
+        {
+          "name": "Predicted",
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "chromsome16",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 743
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 76
+        },
+        {
+          "name": "Uncertain",
+          "size": 25
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 20
+        },
+        {
+          "name": "Predicted",
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "chromsome17",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 1102
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 116
+        },
+        {
+          "name": "Uncertain",
+          "size": 24
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 20
+        },
+        {
+          "name": "Predicted",
+          "size": 5
+        }
+      ]
+    },
+    {
+      "name": "chromsome18",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 245
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 21
+        },
+        {
+          "name": "Uncertain",
+          "size": 9
+        },
+        {
+          "name": "Predicted",
+          "size": 2
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 2
+        }
+      ]
+    },
+    {
+      "name": "chromsome19",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 1355
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 215
+        },
+        {
+          "name": "Uncertain",
+          "size": 37
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 27
+        },
+        {
+          "name": "Predicted",
+          "size": 7
+        }
+      ]
+    },
+    {
+      "name": "chromsome20",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 466
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 59
+        },
+        {
+          "name": "Uncertain",
+          "size": 13
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 13
+        },
+        {
+          "name": "Predicted",
+          "size": 3
+        }
+      ]
+    },
+    {
+      "name": "chromsome21",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 190
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 30
+        },
+        {
+          "name": "Uncertain",
+          "size": 25
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 15
+        },
+        {
+          "name": "Predicted",
+          "size": 1
+        }
+      ]
+    },
+    {
+      "name": "chromsome22",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 410
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 44
+        },
+        {
+          "name": "Uncertain",
+          "size": 21
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 8
+        }
+      ]
+    },
+    {
+      "name": "chromsomeNaN",
+      "children": [
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 14
+        },
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 708
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 98
+        },
+        {
+          "name": "Uncertain",
+          "size": 27
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 25
+        },
+        {
+          "name": "Predicted",
+          "size": 8
+        },
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 36
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 10
+        },
+        {
+          "name": "Uncertain",
+          "size": 7
+        },
+        {
+          "name": "Inferred_from_homology",
+          "size": 5
+        },
+        {
+          "name": "Evidence_at_protein_level",
+          "size": 2
+        },
+        {
+          "name": "Evidence_at_transcript_level",
+          "size": 2
+        },
+        {
+          "name": "Uncertain",
+          "size": 1
+        }
+      ]
+    }
+  ]
+}
