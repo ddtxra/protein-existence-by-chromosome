@@ -74,7 +74,7 @@ nx.executeSparql(sparqlQuery).then(function (response) {
     response.results.bindings.forEach(function (data) {
         var pe = data.pe.value.replace("http://nextprot.org/rdf#" , "");
         var cnt = parseInt(data.cnt.value);
-        var chr = parseInt(data.chr.value);
+        var chr = data.chr.value;
         var chrValues = seriesData[chr] || [];
         chrValues.push({"name" : pe, "size" : cnt});
         seriesData[chr] = chrValues;
@@ -82,13 +82,11 @@ nx.executeSparql(sparqlQuery).then(function (response) {
     var children = Object.keys(seriesData).map(function (chromosome){ 
         
         var childrenPerChrosome = seriesData[chromosome].map(function (i){ return {name : i.name, size: i.size}});
-        return { "name" : "chromsome" + chromosome, "children" : childrenPerChrosome}
+        return { "name" : "chromosome-" + chromosome, "children" : childrenPerChrosome}
     })
     dataResult.children = children;
     
     //console.log(JSON.stringify(dataResult, null, 2));
-    
-    
     
     
       var path = svg.datum(dataResult).selectAll("path")
