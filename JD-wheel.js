@@ -1,23 +1,46 @@
-var w = 700,
+var w = 800,
     h = w,
     r = w / 2,
     x = d3.scale.linear().range([0, 2 * Math.PI]),
-    y = d3.scale.pow().exponent(1.3).domain([0, 1]).range([0, r]),
+    y = d3.scale.pow().exponent(0.8).domain([0, 1]).range([0, r]),
     p = 5,
     duration = 1000;
 
 var color = d3.scale.category20c();
 var maxSize = 0;
+var maxLevel = 0;
 
 var div = d3.select("#vis");
 
 div.select("img").remove();
 
-var vis = div.append("svg")
+var svgElem = div.append("svg")
     .attr("width", w + p * 2)
-    .attr("height", h + p * 2)
-  .append("g")
+    .attr("height", h + p * 2);
+  
+
+var vis = svgElem.append("g")
     .attr("transform", "translate(" + (r + p) + "," + (r + p) + ")");
+
+//var EvInfoGroup = svgElem.append("g")
+//.attr("transform", "translate(" + (r - 40) + "," + (r - p) + ")")
+//.append("text")
+//.attr("text-anchor","middle");
+//
+//var evInfoPercent = EvInfoGroup
+//.append("tspan")
+//.attr("class","percent")
+//.attr("x", 40);
+//var evInfoNb = EvInfoGroup
+//.append("tspan")
+//.attr("class","evNb")
+//.attr("x", 40)
+//.attr("y", 30);
+//var evInfoUnit = EvInfoGroup
+//.append("tspan")
+//.attr("class","evNb")
+//.attr("x", 40)
+//.attr("y", 50);
 
 div.append("p")
     .attr("id", "intro")
@@ -96,7 +119,23 @@ d3.json("nxEvidence.json", function(json) {
       .text(function(d) { return d.depth >=0 ? d.name.split(" ")[3] || "" : ""; });
 
   function click(d) {
+      
+//      if (d.depth !== 0) {
+//          var evPercent = Math.round(d.value/maxSize * 100)
+//        evInfoPercent
+//            .transition()
+//        .duration(duration)
+//            .text(evPercent+"%");
+//        evInfoNb.transition()
+//        .duration(duration)
+//            .text(d.value);
+//        evInfoUnit.transition()
+//        .duration(duration)
+//            .text("evidences");
+//      }
+//      
     maxSize = d.value;
+    maxLevel = d.depth;
       
     path.transition()
       .duration(duration)
@@ -132,7 +171,8 @@ d3.json("nxEvidence.json", function(json) {
 function showText(a) {
 //    console.log(a);
 //    console.log("maxSize : " + maxSize + "; value : " + a.value);
-    if (a.value < 1/100*maxSize) return false;
+    if (a.depth > maxLevel+1) return false;
+    else if (a.value < 1/100*maxSize) return false;
     else return true;
 }
 function isParentOf(p, c) {
@@ -164,7 +204,7 @@ function arcTween(d) {
   var my = maxY(d),
       xd = d3.interpolate(x.domain(), [d.x, d.x + d.dx]),
       yd = d3.interpolate(y.domain(), [d.y, my]),
-      yr = d3.interpolate(y.range(), [d.y ? 20 : 0, r]);
+      yr = d3.interpolate(y.range(), [d.y ? 80 : 0, r]);
   return function(d) {
     return function(t) { x.domain(xd(t)); y.domain(yd(t)).range(yr(t)); return arc(d); };
   };
