@@ -22,25 +22,33 @@ var svgElem = div.append("svg")
 var vis = svgElem.append("g")
     .attr("transform", "translate(" + (r + p) + "," + (r + p) + ")");
 
-//var EvInfoGroup = svgElem.append("g")
-//.attr("transform", "translate(" + (r - 40) + "," + (r - p) + ")")
-//.append("text")
-//.attr("text-anchor","middle");
-//
-//var evInfoPercent = EvInfoGroup
-//.append("tspan")
-//.attr("class","percent")
-//.attr("x", 40);
-//var evInfoNb = EvInfoGroup
-//.append("tspan")
-//.attr("class","evNb")
-//.attr("x", 40)
-//.attr("y", 30);
-//var evInfoUnit = EvInfoGroup
-//.append("tspan")
-//.attr("class","evNb")
-//.attr("x", 40)
-//.attr("y", 50);
+var evInfoGroup = svgElem.append("g")
+.attr("transform", "translate(" + (r - 40) + "," + (r - p) + ")")
+.style("opacity","0.9");
+
+var evInfoPercent = evInfoGroup
+.append("text")
+.attr("text-anchor","middle")
+.attr("class","percent")
+.attr("x", 50)
+//.style("opacity","1")
+.text("");
+var evInfoNb = evInfoGroup
+.append("text")
+.attr("text-anchor","middle")
+.attr("class","evNb")
+.attr("x", 40)
+.attr("y", 30)
+//.style("opacity","1")
+.text("");
+var evInfoUnit = evInfoGroup
+.append("text")
+.attr("text-anchor","middle")
+.attr("class","evNb")
+.attr("x", 40)
+.attr("y", 50)
+//.style("opacity","1")
+.text("");
 
 div.append("p")
     .attr("id", "intro")
@@ -74,8 +82,9 @@ d3.json("nxEvidence.json", function(json) {
       .style("fill", function(d) {return color((d.children ? d : d.parent).name); })
       .on("click", click);
 
-  var text = vis.selectAll("text").data(nodes);
+  var text = vis.selectAll(".description").data(nodes);
   var textEnter = text.enter().append("text")
+      .attr("class","description")
       .style("opacity", 1)
       .style("visibility", function(e) {
         return showText(e) ? "visible" : "hidden";
@@ -119,21 +128,28 @@ d3.json("nxEvidence.json", function(json) {
       .text(function(d) { return d.depth >=0 ? d.name.split(" ")[3] || "" : ""; });
 
   function click(d) {
+      console.log("test");
+      if (d.depth !== 0) {
+        var t0 = evInfoGroup
+            .transition().duration(500)
+            .style("opacity","0");
+            
+        var t1 = t0
+            .transition().delay(500).duration(1000)
+            .style("opacity","01");
+          
+        var evPercent = Math.round(d.value/d.parent.value * 100)
+        
+        evInfoPercent.transition().delay(500).text(evPercent + "%");
+        evInfoNb.transition().delay(500).text(d.value);
+        evInfoUnit.transition().delay(500).text("evidences");
+      }
+      else{
+          evInfoGroup
+            .transition().duration(500)
+            .style("opacity","0");
+      }
       
-//      if (d.depth !== 0) {
-//          var evPercent = Math.round(d.value/maxSize * 100)
-//        evInfoPercent
-//            .transition()
-//        .duration(duration)
-//            .text(evPercent+"%");
-//        evInfoNb.transition()
-//        .duration(duration)
-//            .text(d.value);
-//        evInfoUnit.transition()
-//        .duration(duration)
-//            .text("evidences");
-//      }
-//      
     maxSize = d.value;
     maxLevel = d.depth;
       
